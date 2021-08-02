@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #cc2b5e;
+  background: -webkit-linear-gradient(to left, #753a88, #cc2b5e);
+  background: linear-gradient(to left, #753a88, #cc2b5e);
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+.content {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h2 {
+  font-size: 50px;
+  padding-bottom: 50px;
+  text-transform: capitalize;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5),
+    0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+button {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 20px;
+  border-radius: 15px;
+  padding: 10px 70px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: inset -4px -4px 20px 0 #fff,
+    inset 4px 4px 20px 0 rgba(0, 0, 0, 0.8);
+  color: #cc2b5e;
+  background: #d9a7c7;
+  background: -webkit-linear-gradient(to bottom, #fffcdc, #d9a7c7);
+  background: linear-gradient(to bottom, #fffcdc, #d9a7c7);
+}
+
+.swal-wide {
+  position: relative !important;
+  width: 90vw !important;
+  height: 90vh !important;
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+
+.swal-wide h2 {
+  padding-bottom: 10px;
+}
+
+.swal-wide p {
+  font-size: 25px;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+
+  button {
+    margin: 20px 0;
+  }
+
+  .swal-wide {
+    position: relative !important;
+    width: 90vw !important;
+    height: 90vh !important;
+    background: rgba(0, 0, 0, 0.6) !important;
+  }
+
+  .swal-wide h2 {
+    padding-bottom: 10px;
+  }
+
+  .swal-wide p {
+    font-size: 20px;
+    color: #fff;
+  }
+}
